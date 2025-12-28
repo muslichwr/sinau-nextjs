@@ -1,0 +1,30 @@
+
+> @ build F:\Project\sinau-react\nextjs-dashboard
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of F:\Project\sinau-react\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * F:\Project\sinau-react\nextjs-dashboard\pnpm-lock.yaml
+
+   ▲ Next.js 16.0.10 (Turbopack)
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 3.4s
+   Running TypeScript ...
+Failed to compile.
+
+.next/types/validator.ts:53:39
+Type error: File 'F:/Project/sinau-react/nextjs-dashboard/app/dashboard/page.tsx' is not a module.
+
+[0m [90m 51 |[39m {
+ [90m 52 |[39m   type __IsExpected[33m<[39m[33mSpecific[39m [36mextends[39m [33mAppPageConfig[39m[33m<[39m[32m"/dashboard"[39m[33m>>[39m [33m=[39m [33mSpecific[39m
+[31m[1m>[22m[39m[90m 53 |[39m   [36mconst[39m handler [33m=[39m {} [36mas[39m [36mtypeof[39m [36mimport[39m([32m"../../app/dashboard/page.js"[39m)
+ [90m    |[39m                                       [31m[1m^[22m[39m
+ [90m 54 |[39m   type __Check [33m=[39m __IsExpected[33m<[39m[36mtypeof[39m handler[33m>[39m
+ [90m 55 |[39m   [90m// @ts-ignore[39m
+ [90m 56 |[39m   type __Unused [33m=[39m __Check[0m
+Next.js build worker exited with code: 1 and signal: null
+ ELIFECYCLE  Command failed with exit code 1.
